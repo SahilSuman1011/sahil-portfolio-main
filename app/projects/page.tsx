@@ -40,6 +40,33 @@ export default function Projects() {
             image="/study.png"
           />
 
+<ProjectCard
+            title="Cineseek - Movie Finder App"
+            description="Built Movie Finder App with Extensive Search using Expo, TypeScript, and Tailwind CSS, this app fetches movies and creates a popularity algorithm using Appwrite. It provides users with a seamless browsing experience, ranking movies based on various engagement metrics."
+            techStack={["React Native", "Typescript","Expo", "Tailwind CSS", "Appwrite"]}
+            liveLink="https://drive.google.com/file/d/1TLOhY16S1RSPNzKuJdbic_8BOoo6k-AS/view?usp=drive_link"
+            githubLink="https://github.com/SahilSuman1011/CineSeek"
+            image="/cine.png"
+          />
+
+<ProjectCard
+            title="Promptopia - AI Prompt Sharing Application"
+            description="Created a full-stack AI prompt-sharing app with CRUD features and Google authentication via NextAuth. Designed a modern UI with Glassmorphism using TailwindCSS, improving user experience. Implemented tag-based filtering for better searchability and community engagement."
+            techStack={["Next.js", "MongoDB", "NextAuth", "TailwindCSS"]}
+            liveLink="https://promptopia-prompt-sharing-project.vercel.app/"
+            githubLink="https://github.com/SahilSuman1011/Promptopia"
+            image="/Promptopia.png"
+          />
+
+<ProjectCard
+            title="LMS - Lead Management System"
+            description="Created a streamlined frontend application for sales teams to manage leads, track calls, and update student statuses with an intuitive interface that supports the complete lead conversion workflow."
+            techStack={["react.js", "JWT", "shadcn", "TailwindCSS"]}
+            liveLink="https://lms-project-done.vercel.app/"
+            githubLink="https://github.com/SahilSuman1011/LMSdemo"
+            image="/lms.png"
+          />
+
           <ProjectCard
             title="AutoComm - Community Engagement Platform"
             description="Built a community platform using Kestra workflows for reporting issues, polls, and real-time updates. Developed a dashboard to track engagement metrics, enhancing accountability. Automated issue routing, notifications, and polling analysis for efficiency."
@@ -56,15 +83,6 @@ export default function Projects() {
             liveLink="https://polygon-mapper-main.vercel.app/"
             githubLink="https://github.com/SahilSuman1011/Polygon-mapper-main"
             image="/polygon.png"
-          />
-
-          <ProjectCard
-            title="Promptopia - AI Prompt Sharing Application"
-            description="Created a full-stack AI prompt-sharing app with CRUD features and Google authentication via NextAuth. Designed a modern UI with Glassmorphism using TailwindCSS, improving user experience. Implemented tag-based filtering for better searchability and community engagement."
-            techStack={["Next.js", "MongoDB", "NextAuth", "TailwindCSS"]}
-            liveLink="https://promptopia-prompt-sharing-project.vercel.app/"
-            githubLink="https://github.com/SahilSuman1011/Promptopia"
-            image="/Promptopia.png"
           />
         </div>
       </main>
