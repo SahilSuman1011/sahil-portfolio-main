@@ -77,8 +77,17 @@ export default function Projects() {
           />
 
           <ProjectCard
+            title="URL Shortener API Service"
+            description="A RESTful API for shortening URLs using Node.js, TypeScript, Express, MongoDB, and NanoID."
+            techStack={["Typescript", "Node.js", "Express", "MongoDB", "NanoID"]}
+            liveLink="https://github.com/SahilSuman1011/url-shortener"
+            githubLink="https://github.com/SahilSuman1011/url-shortener"
+            image="/url.png"
+          />
+
+          <ProjectCard
             title="StudyNotion - An EdTech Platform"
-            description="Developed an educational platform with React and Tailwind CSS for content creation, viewing, and rating. Built a backend with Node.js and Express.js, reducing load time by 40% and improving performance. Integrated MongoDB for scalable data management and developed a RESTful API."
+            description="An Educational Platform built with React and Tailwind CSS for content creation, viewing, and rating. Built a backend with Node.js and Express.js, reducing load time by 40% and improving performance. Integrated MongoDB for scalable data management and developed a RESTful API."
             techStack={["React", "Tailwind CSS", "Express", "Node.js", "MongoDB"]}
             liveLink="https://studynotion-frontend.vercel.app/"
             githubLink="https://github.com/SahilSuman1011/StudyNotion"
@@ -87,7 +96,7 @@ export default function Projects() {
 
           <ProjectCard
             title="Cineseek - Movie Finder App"
-            description="Built Movie Finder App with Extensive Search using Expo, TypeScript, and Tailwind CSS, this app fetches movies and creates a popularity algorithm using Appwrite. It provides users with a seamless browsing experience, ranking movies based on various engagement metrics."
+            description="A Movie Finder App with Extensive Search using Expo, TypeScript, and Tailwind CSS, this app fetches movies and creates a popularity algorithm using Appwrite. It provides users with a seamless browsing experience, ranking movies based on various engagement metrics."
             techStack={["React Native", "Typescript","Expo", "Tailwind CSS", "Appwrite"]}
             liveLink="https://drive.google.com/file/d/1TLOhY16S1RSPNzKuJdbic_8BOoo6k-AS/view?usp=drive_link"
             githubLink="https://github.com/SahilSuman1011/CineSeek"
@@ -95,8 +104,17 @@ export default function Projects() {
           />
 
           <ProjectCard
+            title="Car Rental System"
+            description="A command-line application developed in C++ with MySQL integration. It allows users to view available cars, select one for booking, and update the availability status in real-time."
+            techStack={["C++", "MySQL", "OOPS", "STL"]}
+            liveLink="https://github.com/SahilSuman1011/Car-Rental-System"
+            githubLink="https://github.com/SahilSuman1011/Car-Rental-System"
+            image="/cpp.png"
+          />
+
+          <ProjectCard
             title="LMS - Lead Management System"
-            description="Created a streamlined frontend application for sales teams to manage leads, track calls, and update student statuses with an intuitive interface that supports the complete lead conversion workflow."
+            description="A Streamlined frontend application for sales teams to manage leads, track calls, and update student statuses with an intuitive interface that supports the complete lead conversion workflow."
             techStack={["react.js", "JWT", "shadcn", "TailwindCSS"]}
             liveLink="https://lms-project-done.vercel.app/"
             githubLink="https://github.com/SahilSuman1011/LMSdemo"
@@ -105,7 +123,7 @@ export default function Projects() {
 
           <ProjectCard
             title="AutoComm - Community Engagement Platform"
-            description="Built a community platform using Kestra workflows for reporting issues, polls, and real-time updates. Developed a dashboard to track engagement metrics, enhancing accountability. Automated issue routing, notifications, and polling analysis for efficiency."
+            description="A Data-driven Community Engagement platform built using Kestra workflows for reporting issues, polls, and real-time updates. Developed a dashboard to track engagement metrics, enhancing accountability. Automated issue routing, notifications, and polling analysis for efficiency."
             techStack={["Next.js", "MongoDB", "Kestra", "Clerk"]}
             liveLink="https://kestra-autocomm.vercel.app/"
             githubLink="https://github.com/SahilSuman1011/kestra-hackfrost-24"
