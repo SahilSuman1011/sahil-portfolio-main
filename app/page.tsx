@@ -43,12 +43,12 @@ export default function Home() {
             </p>
             <div className="flex items-center gap-4">
               <p className="dark:text-gray-300 text-gray-700 font-semibold">
-                Currently Learning <span className="font-bold">Generative AI</span> &{" "}
-                <span className="font-bold">Agentic AI</span>{" "}
+                Currently Building <span className="font-bold">SAAS</span> &{" "}
+                <span className="font-bold">AI Systems</span>{" "}
                 <span className="rotate dark:text-gray-300 text-gray-700">❄️</span>
               </p>
               <Link
-                href="https://www.linkedin.com/in/sahilsuman11/"
+                href="https://cal.com/sahil-suman"
                 className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-600/10 text-green-500 hover:bg-green-600/20 transition-colors"
               >
                 <span className="relative flex h-2 w-2">
@@ -61,7 +61,7 @@ export default function Home() {
 
             <div className="flex items-center space-x-4 pt-4">
               <Link
-                href="https://drive.google.com/file/d/1qjcO-YYA0LqzHW54Ucn5n-p_yqb5IS5B/view?usp=sharing"
+                href="https://drive.google.com/file/d/19rY0bWBAWtQQpvCY78gTf9KriCgL-00G/view?usp=sharing"
                 target="_blank"
                 className="flex items-center gap-2 px-4 py-2 border border-gray-500 rounded-md hover:bg-gray-500 dark:text-white text-gray-900 transition-colors"
               >

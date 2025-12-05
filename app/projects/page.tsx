@@ -32,6 +32,33 @@ export default function Projects() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ProjectCard
+            title="Toolie AI – AI Productivity Suite"
+            description="A Scalable PERN-based AI tools platform with Clerk Auth & secure REST APIs. Improved UI load time by 25% using React.memo, lazy loading, and optimized SQL queries for faster response."
+            techStack={["React", "Tailwind CSS", "Express", "Node.js", "PostgreSQL", "Gemini API"]}
+            liveLink="https://toolie-ai.vercel.app/"
+            githubLink="https://github.com/SahilSuman1011/Toolie-AI"
+            image="/tool.png"
+          />
+
+          <ProjectCard
+            title="Promptopia - AI Prompt Sharing Platform"
+            description="A Full-stack AI prompt-sharing Platform with CRUD features and Google authentication via NextAuth. Designed a modern UI with Glassmorphism using TailwindCSS, improving user experience. Implemented tag-based filtering for better searchability and community engagement."
+            techStack={["Next.js", "MongoDB", "NextAuth", "TailwindCSS"]}
+            liveLink="https://promptopia-prompt-sharing-project.vercel.app/"
+            githubLink="https://github.com/SahilSuman1011/Promptopia"
+            image="/Promptopia.png"
+          />
+
+          <ProjectCard
+            title="Synapse AI — Agent-Fabric Automation Framework"
+            description="A Modular AI Agent Framework enabling task orchestration across multiple AI agents using event-driven architecture. Implemented secure REST APIs, agent pipelines, and webhook-based communication for seamless cross-agent coordination."
+            techStack={["Langchain", "LangGraph", "Python", "FastAPI", "Pydantic"]}
+            liveLink="https://github.com/SahilSuman1011/Synapse-Agent-Fabric-Framework"
+            githubLink="https://github.com/SahilSuman1011/Synapse-Agent-Fabric-Framework"
+            image="/syn.png"
+          />
+
+          <ProjectCard
             title="StudyNotion - An EdTech Platform"
             description="Developed an educational platform with React and Tailwind CSS for content creation, viewing, and rating. Built a backend with Node.js and Express.js, reducing load time by 40% and improving performance. Integrated MongoDB for scalable data management and developed a RESTful API."
             techStack={["React", "Tailwind CSS", "Express", "Node.js", "MongoDB"]}
@@ -47,15 +74,6 @@ export default function Projects() {
             liveLink="https://drive.google.com/file/d/1TLOhY16S1RSPNzKuJdbic_8BOoo6k-AS/view?usp=drive_link"
             githubLink="https://github.com/SahilSuman1011/CineSeek"
             image="/cine.png"
-          />
-
-<ProjectCard
-            title="Promptopia - AI Prompt Sharing Application"
-            description="Created a full-stack AI prompt-sharing app with CRUD features and Google authentication via NextAuth. Designed a modern UI with Glassmorphism using TailwindCSS, improving user experience. Implemented tag-based filtering for better searchability and community engagement."
-            techStack={["Next.js", "MongoDB", "NextAuth", "TailwindCSS"]}
-            liveLink="https://promptopia-prompt-sharing-project.vercel.app/"
-            githubLink="https://github.com/SahilSuman1011/Promptopia"
-            image="/Promptopia.png"
           />
 
 <ProjectCard
