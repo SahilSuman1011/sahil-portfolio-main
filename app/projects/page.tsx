@@ -41,6 +41,24 @@ export default function Projects() {
           />
 
           <ProjectCard
+            title="Synapse AI — Agent-Fabric Automation Framework"
+            description="A Modular AI Agent Framework enabling task orchestration across multiple AI agents using event-driven architecture. Implemented secure REST APIs, agent pipelines, and webhook-based communication for seamless cross-agent coordination."
+            techStack={["Langchain", "LangGraph", "Python", "FastAPI", "Pydantic"]}
+            liveLink="https://github.com/SahilSuman1011/Synapse-Agent-Fabric-Framework"
+            githubLink="https://github.com/SahilSuman1011/Synapse-Agent-Fabric-Framework"
+            image="/syn.png"
+          />
+
+          <ProjectCard
+            title="Real-Time Order Management System"
+            description="An Event-driven architecture using PostgreSQL NOTIFY/LISTEN + Socket.io for real-time updates. Containerized with Docker Compose for consistent staging/production deployments."
+            techStack={["Node.js", "Express" , "HTML/CSS/JS", "Socket.io", "PostgreSQL"]}
+            liveLink="https://github.com/SahilSuman1011/real-time-Order-Updates"
+            githubLink="https://github.com/SahilSuman1011/real-time-Order-Updates"
+            image="/RO.png"
+          />
+
+            <ProjectCard
             title="Promptopia - AI Prompt Sharing Platform"
             description="A Full-stack AI prompt-sharing Platform with CRUD features and Google authentication via NextAuth. Designed a modern UI with Glassmorphism using TailwindCSS, improving user experience. Implemented tag-based filtering for better searchability and community engagement."
             techStack={["Next.js", "MongoDB", "NextAuth", "TailwindCSS"]}
@@ -50,12 +68,12 @@ export default function Projects() {
           />
 
           <ProjectCard
-            title="Synapse AI — Agent-Fabric Automation Framework"
-            description="A Modular AI Agent Framework enabling task orchestration across multiple AI agents using event-driven architecture. Implemented secure REST APIs, agent pipelines, and webhook-based communication for seamless cross-agent coordination."
-            techStack={["Langchain", "LangGraph", "Python", "FastAPI", "Pydantic"]}
-            liveLink="https://github.com/SahilSuman1011/Synapse-Agent-Fabric-Framework"
-            githubLink="https://github.com/SahilSuman1011/Synapse-Agent-Fabric-Framework"
-            image="/syn.png"
+            title="Expentracker - Expense Tracker Platform"
+            description="A Full-stack full-featured expense management system with Supabase auth, reusable React components, and optimized chart rendering."
+            techStack={["Typescript", "React.js", "PostgreSQL", "Supabase"]}
+            liveLink="https://expense-tracker-freee.netlify.app/"
+            githubLink="https://github.com/SahilSuman1011/Expense-Tracker"
+            image="/expen.png"
           />
 
           <ProjectCard

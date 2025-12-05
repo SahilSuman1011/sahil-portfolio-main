@@ -137,16 +137,31 @@ export default function Home() {
           <div className="py-6 bg-white dark:bg-black rounded-b-md border border-gray-200 dark:border-gray-800">
             {activeTab === "Work" ? (
               <div className="space-y-12">
+
+                <WorkExperience
+                  logo="/mo.png"
+                  company="Meetmo.io"
+                  companyUrl="https://www.linkedin.com/company/meetmo-io/"
+                  role="Software Engineer Intern"
+                  period="May 2025 - June 2025"
+                  responsibilities={[
+                    "Developed responsive high-performance social media app using React Native, TypeScript(ES6+) & Expo following Agile SDLC; achieving pixel-perfect UI & enhanced UX responsiveness.",
+                    "Automated CI/CD workflows with GitHub Actions and Docker, reducing release cycle time by 30%; implemented monitoring and logging for production deployments.",
+                    "Optimized API integrations with TanStack Query for server state management, improving data freshness by 30% and reducing API latency by 25%.",
+                  ]}
+                  tag="Meetmo"
+                />
+
                 <WorkExperience
                   logo="/Screenshot 2025-03-15 173944.png"
                   company="Webstack Academy"
                   companyUrl="https://www.linkedin.com/company/webstackacademyit/"
-                  role="Full stack Developer Intern"
+                  role="Software Engineer Intern"
                   period="Feb 2024 - Apr 2024"
                   responsibilities={[
-                    "Led frontend development of a home-buying website using React.js, implementing user signup, search filters, property listings, and debugging.",
-                    "Applied responsive design techniques with CSS, ensuring optimal usability across devices.",
-                    "Integrated MongoDB for database efficiency and scalability, enhancing user data management.",
+                    "Led development of real-estate platform using Typescript, React.js, Node.js, and MongoDB following Agile methodology; participated in code reviews, and sprints.",
+                    "Enhanced UI performance using React memo & lazy loading, reducing time-to-interactive by 25%. Optimized database queries using indexing, reducing API response time by 40%.",
+                    "Collaborated with product & backend teams to integrate REST APIs, ensuring seamless data synchronization and bug-free releases; collaborated using JIRA for task tracking and Git for version control.",
                   ]}
                   tag="Webstack Academy"
                 />
@@ -233,23 +248,42 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <ProjectCard
-              title="StudyNotion - An EdTech Platform"
-              description="Developed an educational platform with React and Tailwind CSS for content creation, viewing, and rating. Built a backend with Node.js and Express.js, reducing load time by 40% and improving performance. Integrated MongoDB for scalable data management and developed a RESTful API."
-              techStack={["React", "Tailwind CSS", "Express", "Node.js", "MongoDB"]}
-              liveLink="https://studynotion-frontend.vercel.app/"
-              githubLink="https://github.com/SahilSuman1011/StudyNotion"
-              image="/study.png"
-            />
+          <ProjectCard
+            title="Toolie AI – AI Productivity Suite"
+            description="A Scalable PERN-based AI tools platform with Clerk Auth & secure REST APIs. Improved UI load time by 25% using React.memo, lazy loading, and optimized SQL queries for faster response."
+            techStack={["React", "Tailwind CSS", "Express", "Node.js", "PostgreSQL", "Gemini API"]}
+            liveLink="https://toolie-ai.vercel.app/"
+            githubLink="https://github.com/SahilSuman1011/Toolie-AI"
+            image="/tool.png"
+          />
 
             <ProjectCard
-              title="Promptopia- AI Prompt Sharing App"
-              description="Created a full-stack AI prompt-sharing app with CRUD features and Google authentication via NextAuth. Designed a modern UI with Glassmorphism using TailwindCSS, improving user experience. Implemented tag-based filtering for better searchability and community engagement."
-              techStack={["Next.js", "MongoDB", "NextAuth", "TailwindCSS"]}
-              liveLink="https://promptopia-prompt-sharing-project.vercel.app/"
-              githubLink="https://github.com/SahilSuman1011/Promptopia"
-              image="/Promptopia.png"
-            />
+            title="Synapse AI — Agent-Fabric Automation Framework"
+            description="A Modular AI Agent Framework enabling task orchestration across multiple AI agents using event-driven architecture. Implemented secure REST APIs, agent pipelines, and webhook-based communication for seamless cross-agent coordination."
+            techStack={["Langchain", "LangGraph", "Python", "FastAPI", "Pydantic"]}
+            liveLink="https://github.com/SahilSuman1011/Synapse-Agent-Fabric-Framework"
+            githubLink="https://github.com/SahilSuman1011/Synapse-Agent-Fabric-Framework"
+            image="/syn.png"
+          />
+
+            <ProjectCard
+            title="Real-Time Order Management System"
+            description="An Event-driven architecture using PostgreSQL NOTIFY/LISTEN + Socket.io for real-time updates. Containerized with Docker Compose for consistent staging/production deployments."
+            techStack={["Node.js", "Express" , "HTML/CSS/JS", "Socket.io", "PostgreSQL"]}
+            liveLink="https://github.com/SahilSuman1011/real-time-Order-Updates"
+            githubLink="https://github.com/SahilSuman1011/real-time-Order-Updates"
+            image="/RO.png"
+          />
+
+          <ProjectCard
+            title="Cineseek - Movie Finder App"
+            description="Built Movie Finder App with Extensive Search using Expo, TypeScript, and Tailwind CSS, this app fetches movies and creates a popularity algorithm using Appwrite. It provides users with a seamless browsing experience, ranking movies based on various engagement metrics."
+            techStack={["React Native", "Typescript","Expo", "Tailwind CSS", "Appwrite"]}
+            liveLink="https://drive.google.com/file/d/1TLOhY16S1RSPNzKuJdbic_8BOoo6k-AS/view?usp=drive_link"
+            githubLink="https://github.com/SahilSuman1011/CineSeek"
+            image="/cine.png"
+          />
+
           </div>
         </div>
 
