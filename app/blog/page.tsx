@@ -35,7 +35,7 @@ export default function Blog() {
             excerpt="Through this blog, I want to share my journey, experiences, and learnings in tech, hoping to inspire and connect with like-minded individuals..."
             date="Jan 25, 2025"
             readTime="2 min read"
-            slug="Embarking on My Journey in Tech Blogging"
+            href="https://sahilsuman11.hashnode.dev/embarking-on-my-journey-in-tech-blogging"
           />
 
           <BlogCard
@@ -44,7 +44,7 @@ export default function Blog() {
             excerpt="With the rise of AI-powered tools like ChatGPT, everyone is trying to figure out how to write the perfect AI prompt. The truth is, AI prompt engineering is still a new field, and even experts are constantly experimenting to determine what works best. Getting high-quality results from AI is not just about what you ask—it is about how you phrase it.."
             date="March 15, 2025"
             readTime="4 min read"
-            slug="Art of Writing Proper AI Prompts"
+            href="https://sahilsuman11.hashnode.dev/crafting-perfect-ai-prompts-tips-and-techniques-for-success"
           />
         </div>
       </main>
@@ -60,10 +60,10 @@ interface BlogCardProps {
   excerpt: string
   date: string
   readTime: string
-  slug: string
+  href: string
 }
 
-function BlogCard({ title, subtitle, excerpt, date, readTime, slug }: BlogCardProps) {
+function BlogCard({ title, subtitle, excerpt, date, readTime, href }: BlogCardProps) {
   return (
     <div className="border border-gray-200 dark:border-gray-800 rounded-lg p-8 bg-white dark:bg-black">
       <h2 className="text-2xl font-bold mb-1 text-gray-900 dark:text-white">{title}</h2>
@@ -75,7 +75,9 @@ function BlogCard({ title, subtitle, excerpt, date, readTime, slug }: BlogCardPr
           <span>{readTime}</span>
         </div>
         <Link
-          href={`/blog/${slug}`}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
           className="px-4 py-1 bg-gray-900 dark:bg-white text-white dark:text-black rounded-md hover:bg-gray-700 dark:hover:bg-gray-200 transition-colors text-sm"
         >
           Read more

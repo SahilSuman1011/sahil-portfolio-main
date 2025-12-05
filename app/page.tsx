@@ -266,7 +266,7 @@ export default function Home() {
             image="/syn.png"
           />
 
-            <ProjectCard
+          <ProjectCard
             title="Real-Time Order Management System"
             description="An Event-driven architecture using PostgreSQL NOTIFY/LISTEN + Socket.io for real-time updates. Containerized with Docker Compose for consistent staging/production deployments."
             techStack={["Node.js", "Express" , "HTML/CSS/JS", "Socket.io", "PostgreSQL"]}
@@ -306,7 +306,7 @@ export default function Home() {
               excerpt="Through this blog, I want to share my journey, experiences, and learnings in tech, hoping to inspire and connect with like-minded individuals..."
               date="Jan 25, 2025"
               readTime="2 min read"
-              slug="Embarking on My Journey in Tech Blogging"
+              href="https://sahilsuman11.hashnode.dev/embarking-on-my-journey-in-tech-blogging"
             />
 
             <BlogCard
@@ -315,7 +315,7 @@ export default function Home() {
               excerpt="With the rise of AI-powered tools like ChatGPT, everyone is trying to figure out how to write the perfect AI prompt. The truth is, AI prompt engineering is still a new field, and even experts are constantly experimenting to determine what works best. Getting high-quality results from AI is not just about what you ask—it is about how you phrase it.."
               date="March 15, 2025"
               readTime="4 min read"
-              slug="Art of Writing Proper AI Prompts"
+              href="https://sahilsuman11.hashnode.dev/crafting-perfect-ai-prompts-tips-and-techniques-for-success"
             />
           </div>
         </div>
@@ -435,11 +435,11 @@ interface BlogCardProps {
   excerpt: string
   date: string
   readTime: string
-  slug: string
+  href: string
   subtitle?: string
 }
 
-function BlogCard({ title, excerpt, date, readTime, slug, subtitle }: BlogCardProps) {
+function BlogCard({ title, excerpt, date, readTime, href, subtitle }: BlogCardProps) {
   return (
     <div className="border border-gray-200 dark:border-gray-800 rounded-lg p-6 bg-white dark:bg-black">
       <h3 className="text-xl font-semibold mb-1 text-gray-900 dark:text-white">{title}</h3>
@@ -451,7 +451,9 @@ function BlogCard({ title, excerpt, date, readTime, slug, subtitle }: BlogCardPr
           <span>{readTime}</span>
         </div>
         <Link
-          href={`/blog/${slug}`}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
           className="px-4 py-1 bg-gray-900 dark:bg-white text-white dark:text-black rounded-md hover:bg-gray-700 dark:hover:bg-gray-200 transition-colors text-sm"
         >
           Read more

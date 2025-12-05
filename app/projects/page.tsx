@@ -85,7 +85,7 @@ export default function Projects() {
             image="/study.png"
           />
 
-<ProjectCard
+          <ProjectCard
             title="Cineseek - Movie Finder App"
             description="Built Movie Finder App with Extensive Search using Expo, TypeScript, and Tailwind CSS, this app fetches movies and creates a popularity algorithm using Appwrite. It provides users with a seamless browsing experience, ranking movies based on various engagement metrics."
             techStack={["React Native", "Typescript","Expo", "Tailwind CSS", "Appwrite"]}
@@ -94,7 +94,7 @@ export default function Projects() {
             image="/cine.png"
           />
 
-<ProjectCard
+          <ProjectCard
             title="LMS - Lead Management System"
             description="Created a streamlined frontend application for sales teams to manage leads, track calls, and update student statuses with an intuitive interface that supports the complete lead conversion workflow."
             techStack={["react.js", "JWT", "shadcn", "TailwindCSS"]}
