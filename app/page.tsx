@@ -11,45 +11,55 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState("Work")
   return (
     <div className="min-h-screen bg-white dark:bg-black">
-      <header className="max-w-4xl mx-auto py-6 px-4 flex justify-between items-center">
-        <nav className="flex space-x-6">
-          <Link href="/" className="font-medium dark:text-white">
+      <header className="max-w-3xl mx-auto py-6 px-4 flex justify-between items-center">
+        <nav className="flex space-x-3 sm:space-x-6">
+          <Link href="/" className="font-medium dark:text-white text-sm sm:text-base">
             Home
           </Link>
-          <Link href="/projects" className="font-medium dark:text-white">
+          <Link href="/projects" className="font-medium dark:text-white text-sm sm:text-base">
             Projects
           </Link>
-          <Link href="/blog" className="font-medium dark:text-white">
+          <Link href="/blog" className="font-medium dark:text-white text-sm sm:text-base">
             Blog
           </Link>
-          <Link href="/contact" className="font-medium dark:text-white">
+          <Link href="/contact" className="font-medium dark:text-white text-sm sm:text-base">
             Contact
           </Link>
         </nav>
         <ThemeToggle />
       </header>
 
-      <main className="max-w-4xl mx-auto px-4 py-12">
+      <main className="max-w-3xl mx-auto px-4 py-4 md:py-12">
 
         
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
-          <div className="space-y-4">
-            <h1 className="text-5xl font-bold dark:text-white text-gray-900 font-Morandi">
-              Hi Sahil here <span className="wave">👋</span>
-            </h1>
-            <p className="text-lg dark:text-gray-300 text-gray-700"> Full stack Software Developer from India 🇮🇳</p>
-            <p className="max-w-xl font-semibold dark:text-gray-300 text-gray-700">
-              I Build Scalable and Production ready Softwares. Find me on GitHub for code and LinkedIn for updates.
-            </p>
-            <div className="flex items-center gap-4">
-              <p className="dark:text-gray-300 text-gray-700 font-semibold">
+          <div className="space-y-2 md:space-y-4">
+            <div className="flex items-start gap-6 md:gap-3">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold dark:text-white text-gray-900 font-Morandi">
+                Hi Sahil here <span className="wave">👋</span>
+              </h1>
+              <div className="md:hidden w-16 h-16 rounded-lg overflow-hidden bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-[2px] flex-shrink-0 -mt-1">
+                <div className="relative w-full h-full rounded-lg overflow-hidden bg-white dark:bg-black">
+                  <Image
+                    src="/sahil img 2.jpg"
+                    alt="Sahil Suman"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+            <p className="text-base sm:text-lg dark:text-gray-300 text-gray-700"> Full stack AI Developer from India 🇮🇳</p>
+            
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
+              <p className="dark:text-gray-300 text-gray-700 font-semibold text-sm sm:text-base">
                 Currently Building <span className="font-bold">SAAS</span> &{" "}
                 <span className="font-bold">AI Systems</span>{" "}
                 <span className="rotate dark:text-gray-300 text-gray-700">❄️</span>
               </p>
               <Link
                 href="https://cal.com/sahil-suman"
-                className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-600/10 text-green-500 hover:bg-green-600/20 transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-600/10 text-green-500 hover:bg-green-600/20 transition-colors text-sm sm:text-base w-fit"
               >
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -59,11 +69,11 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="flex items-center space-x-4 pt-4">
+            <div className="flex flex-wrap items-center gap-2 sm:gap-4 pt-4">
               <Link
                 href="https://drive.google.com/file/d/19rY0bWBAWtQQpvCY78gTf9KriCgL-00G/view?usp=sharing"
                 target="_blank"
-                className="flex items-center gap-2 px-4 py-2 border border-gray-500 rounded-md hover:bg-gray-500 dark:text-white text-gray-900 transition-colors"
+                className="flex items-center gap-2 px-3 sm:px-4 py-2 border border-gray-500 rounded-md hover:bg-gray-500 dark:text-white text-gray-900 transition-colors text-sm sm:text-base"
               >
                 <FileText size={16} />
                 Resume

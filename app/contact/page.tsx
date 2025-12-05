@@ -6,29 +6,29 @@ import { Phone, Send } from "lucide-react"
 export default function Contact() {
   return (
     <div className="min-h-screen bg-white dark:bg-black">
-      <header className="max-w-4xl mx-auto py-6 px-4 flex justify-between items-center">
-        <nav className="flex space-x-6">
-          <Link href="/" className="font-medium dark:text-white">
+      <header className="max-w-3xl mx-auto py-6 px-4 flex justify-between items-center">
+        <nav className="flex space-x-3 sm:space-x-6">
+          <Link href="/" className="font-medium dark:text-white text-sm sm:text-base">
             Home
           </Link>
-          <Link href="/projects" className="font-medium dark:text-white">
+          <Link href="/projects" className="font-medium dark:text-white text-sm sm:text-base">
             Projects
           </Link>
-          <Link href="/blog" className="font-medium dark:text-white">
+          <Link href="/blog" className="font-medium dark:text-white text-sm sm:text-base">
             Blog
           </Link>
-          <Link href="/contact" className="font-medium dark:text-white">
+          <Link href="/contact" className="font-medium dark:text-white text-sm sm:text-base">
             Contact
           </Link>
         </nav>
         <ThemeToggle />
       </header>
 
-      <main className="max-w-4xl mx-auto px-4 py-12">
+      <main className="max-w-3xl mx-auto px-4 py-12">
         <div className="space-y-8">
           <div>
-            <h1 className="text-4xl font-bold dark:text-white mb-4">Work with me</h1>
-            <p className="text-lg dark:text-gray-300">
+            <h1 className="text-3xl sm:text-4xl font-bold dark:text-white mb-4">Work with me</h1>
+            <p className="text-base sm:text-lg dark:text-gray-300">
               I&apos;m currently available for <span className="font-medium">freelance work</span>. I&apos;m also open to{" "}
               <span className="font-medium">full-time opportunities</span>.
             </p>
